@@ -35,7 +35,7 @@ input{
     height: 7vh;
     width: 21.5vh;
     border-radius: 2px;
-    border: none;
+    border: solid;
     background-color: white;
     color: black;
     text-align: center;
@@ -45,8 +45,8 @@ input:focus, input:hover{
     transition: 500ms;
 }
 button{
-    margin-bottom: 5px;;
-    border:none;
+    margin-bottom: 7px;;
+    border:thin;
     border-radius: 2px;
     color: black;
     background-color: white;
