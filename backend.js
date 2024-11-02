@@ -56,6 +56,7 @@ function logicMain(){
     var correct_pos = 0
     var correct = 0
     if (value==randomVal){
+        guesses=0
         const li = document.createElement('li')
         li.appendChild(document.createTextNode("That's correct! You win. Start again."))
         ul.appendChild(li)
