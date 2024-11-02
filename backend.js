@@ -11,10 +11,23 @@ function checkIn(a,b){
 }
 
 function start(){
+    if(guesses!=10 && guesses!=0){
+        const ul = document.getElementById("guesses")
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode("You are already in a game, you have "+(10-guesses)+" tries remaining."))
+        ul.appendChild(li)
+        return
+
+    }
+
     const ul = document.getElementById("guesses")
     guesses = 0
     ul.innerHTML = ''
     randomVal = ""
+    const li = document.createElement('li')
+        li.appendChild(document.createTextNode("Game has begun. You have 10 tries"))
+        ul.appendChild(li)
+
 
     while (randomVal.length<5){
         rand = Math.floor(Math.random()*10)
