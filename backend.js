@@ -85,6 +85,7 @@ function logicMain(){
         li.appendChild(document.createTextNode("That's correct! You win. Start again."))
         ul.appendChild(li)
         randomVal = ""
+        window.location.href = "https://www.youtube.com/watch?v=wTbJwrBnnbU";
         return
     }
     for(let i =0;i<=4;i++){
