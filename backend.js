@@ -51,8 +51,15 @@ function logicMain(){
         ul.appendChild(li)
         return
     }
-    guesses+=1
+    
     const value = document.getElementById("textSpace").value
+    if(value.length!=5){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode("ONLY 5 DIGIT NUMBERS!"))
+        ul.appendChild(li)
+        return
+    }
+    guesses+=1
     var correct_pos = 0
     var correct = 0
     if (value==randomVal){
