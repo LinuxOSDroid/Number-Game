@@ -9,6 +9,16 @@ function checkIn(a,b){
     }
     return false
 }
+function checkRepetition(numVal){
+    var numbers = []
+    for(i =0; i<numVal.length;i++){
+        if(numbers.includes(numVal[i])){
+            return true
+        }
+        else{numbers[numbers.length]=numVal[i]}
+    }
+    return false    
+}
 
 function start(){
     if(guesses!=10 && guesses!=0){
@@ -56,6 +66,13 @@ function logicMain(){
     if(value.length!=5){
         const li = document.createElement('li')
         li.appendChild(document.createTextNode("ONLY 5 DIGIT NUMBERS!"))
+        ul.appendChild(li)
+        return
+    }
+    const checker = checkRepetition(value)
+    if(checker){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode("No repetition of digits allowed!"))
         ul.appendChild(li)
         return
     }
