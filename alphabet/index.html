@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="backend.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>The Alphabet Game</title>
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+
+    <hr>
+
+    <form id="numberInput" class="main">
+
+        <input type="text" id="textSpace" onkeypress="return event.keyCode != 13;"></input><br>
+        <button type="button" onclick="logicMain()">SUBMIT</button>
+        <button type="button" onclick="start()">START</button>
+
+    </form>
+
+    <hr>
+
+    <ul id="guesses">
+
+    </ul>
+    
+</body>
+</html>
